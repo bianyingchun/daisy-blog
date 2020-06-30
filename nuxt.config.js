@@ -31,7 +31,9 @@ module.exports = {
   plugins: [
     { src: "~/plugins/vueAwesomeSwiper.js", ssr: false },
     { src: '~/plugins/vue-mavon-editor.js', ssr: false },
-    { src: '~/plugins/pin.js', ssr: false }
+    { src: '~/plugins/pin.js', ssr: false },
+    { src: '~/plugins/extend.js' },
+    { src: "~/plugins/axios.js" }
   ],
   /*
   ** Nuxt.js dev-modules

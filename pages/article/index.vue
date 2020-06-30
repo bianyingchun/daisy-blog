@@ -1,16 +1,26 @@
 <template>
   <div>
     <h3>article</h3>
-    <!-- <mavon-editor v-model="value"></mavon-editor> -->
   </div>
 </template>
 
 <script>
 export default {
+  async fetch ({ store }) {
+    await store.dispatch('tag/fetchList')
+  },
+  created () {
+
+  },
   data () {
     return {
+      currentPage: 1,
     }
+  },
+  async mounted () {
+    // await this.$request('/article/getAll', 'get')// Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, frames: Window, …}
   }
+
 }
 </script>
 
