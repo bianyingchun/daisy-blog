@@ -7,7 +7,7 @@ const apisMap = {
     CDN: '',
     PROXY: '/proxy',
     SOCKET: 'http://localhost:3000',
-    GRAVATAR: '/proxy/static.surmon.me/avatar'
+    GRAVATAR: '/proxy/static.surmon.me/avatar',
   },
   production: {
     FE: 'https://surmon.me',
@@ -15,7 +15,8 @@ const apisMap = {
     CDN: 'https://cdn.surmon.me',
     PROXY: 'https://cdn.surmon.me/proxy',
     SOCKET: 'https://surmon.me',
-    GRAVATAR: 'https://static.surmon.me/avatar'
+    GRAVATAR: 'https://static.surmon.me/avatar',
+
   }
 }
 

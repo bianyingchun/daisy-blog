@@ -1,0 +1,649 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200830.224301.18924.0.001.json",
+    "dumpEventTime": "2020-08-30T22:43:01Z",
+    "dumpEventTimeStamp": "1598798581949",
+    "processId": 18924,
+    "cwd": "E:\\blog\\daisy-blog",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "server/index.js"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home China",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 57500812,
+        "nice": 0,
+        "sys": 63258671,
+        "idle": 589139359,
+        "irq": 13002859
+      },
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 36918328,
+        "nice": 0,
+        "sys": 32199218,
+        "idle": 640780968,
+        "irq": 1404484
+      },
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 52829234,
+        "nice": 0,
+        "sys": 57523046,
+        "idle": 599546218,
+        "irq": 614312
+      },
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 34881421,
+        "nice": 0,
+        "sys": 38898718,
+        "idle": 636118375,
+        "irq": 296625
+      },
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 42330437,
+        "nice": 0,
+        "sys": 45189421,
+        "idle": 622378640,
+        "irq": 497109
+      },
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 30133968,
+        "nice": 0,
+        "sys": 33713515,
+        "idle": 646051046,
+        "irq": 253156
+      },
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 36558156,
+        "nice": 0,
+        "sys": 51746906,
+        "idle": 621593437,
+        "irq": 394125
+      },
+      {
+        "model": "AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  ",
+        "speed": 2096,
+        "user": 32507953,
+        "nice": 0,
+        "sys": 39800218,
+        "idle": 637590343,
+        "irq": 1335296
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "WLAN",
+        "internal": false,
+        "mac": "10:63:c8:46:fd:c9",
+        "address": "fe80::b960:5f52:74fa:d8dd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 17
+      },
+      {
+        "name": "WLAN",
+        "internal": false,
+        "mac": "10:63:c8:46:fd:c9",
+        "address": "192.168.0.106",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "LAPTOP-8CTT8E71"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff790d91389",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff790d957cc",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28348"
+    },
+    {
+      "pc": "0x00007ff790d94778",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24168"
+    },
+    {
+      "pc": "0x00007ff790e8332b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff791686f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff79166ef91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff79153c85c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff79150f269",
+      "symbol": "v8::internal::ConcurrentBitmap<1>::IsClean+35049"
+    },
+    {
+      "pc": "0x00007ff791522e5e",
+      "symbol": "v8::internal::InvalidatedSlotsFilter::IsValid+31854"
+    },
+    {
+      "pc": "0x00007ff791519a01",
+      "symbol": "v8::internal::MarkCompactCollector::EnsureSweepingCompleted+6273"
+    },
+    {
+      "pc": "0x00007ff791521c32",
+      "symbol": "v8::internal::InvalidatedSlotsFilter::IsValid+27202"
+    },
+    {
+      "pc": "0x00007ff791523c1e",
+      "symbol": "v8::internal::InvalidatedSlotsFilter::IsValid+35374"
+    },
+    {
+      "pc": "0x00007ff791528362",
+      "symbol": "v8::internal::ItemParallelJob::Task::RunInternal+18"
+    },
+    {
+      "pc": "0x00007ff7915282ea",
+      "symbol": "v8::internal::ItemParallelJob::Run+666"
+    },
+    {
+      "pc": "0x00007ff791508568",
+      "symbol": "v8::internal::ConcurrentBitmap<1>::IsClean+7144"
+    },
+    {
+      "pc": "0x00007ff791519e88",
+      "symbol": "v8::internal::MarkCompactCollector::EnsureSweepingCompleted+7432"
+    },
+    {
+      "pc": "0x00007ff7915186e4",
+      "symbol": "v8::internal::MarkCompactCollector::EnsureSweepingCompleted+1380"
+    },
+    {
+      "pc": "0x00007ff791516b4b",
+      "symbol": "v8::internal::ConcurrentBitmap<1>::IsClean+65995"
+    },
+    {
+      "pc": "0x00007ff7915421cd",
+      "symbol": "v8::internal::Heap::LeftTrimFixedArray+1117"
+    },
+    {
+      "pc": "0x00007ff791543ed4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+1060"
+    },
+    {
+      "pc": "0x00007ff791539fc3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff791538794",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff791559a65",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff7912c6239",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+    },
+    {
+      "pc": "0x00007ff791ab2c6d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x00007ff791ab3ba1",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+571841"
+    },
+    {
+      "pc": "0x00000143c7d17fa7",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 303525888,
+    "totalCommittedMemory": 303525888,
+    "usedMemory": 280984032,
+    "availableMemory": 17210296,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759808,
+        "used": 16727312,
+        "available": 32496
+      },
+      "old_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 10387456,
+        "committedMemory": 10387456,
+        "capacity": 9381440,
+        "used": 9381440,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 58200064,
+        "committedMemory": 58200064,
+        "capacity": 54329760,
+        "used": 54329760,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 198717440,
+        "committedMemory": 198717440,
+        "capacity": 198270280,
+        "used": 198270280,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 2404352,
+        "committedMemory": 2404352,
+        "capacity": 2242944,
+        "used": 2242944,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1413.05,
+    "kernelCpuSeconds": 118.625,
+    "cpuConsumptionPercent": 1.47397,
+    "maxRss": 2177150976,
+    "pageFaults": {
+      "IORequired": 8411920,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 15293,
+      "writes": 3384
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "": "C:=C:\\",
+    "ACLOCAL_PATH": "D:\\DevTools\\Git\\mingw64\\share\\aclocal;D:\\DevTools\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_HOME": "D:\\DevTools\\Android\\SDK",
+    "APPDATA": "C:\\Users\\biany\\AppData\\Roaming",
+    "CLASSPATH": ".;C:\\Program Files\\Java\\jdk1.8.0_231\\lib\\dt.jar;C:\\Program Files\\Java\\jdk1.8.0_231\\lib\\tools.jar;",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LAPTOP-8CTT8E71",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "D:/DevTools/Git/mingw64/etc/config.site",
+    "DISPLAY": "needs-to-be-defined",
+    "dp0": "E:\\blog\\daisy-blog\\node_modules\\.bin\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "D:\\DevTools\\Git",
+    "FLUTTER_STORAGE_BASE_URL": "https://storage.flutter-io.cn",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOME": "C:\\Users\\biany",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\biany",
+    "HOSTNAME": "LAPTOP-8CTT8E71",
+    "INFOPATH": "D:\\DevTools\\Git\\usr\\local\\info;D:\\DevTools\\Git\\usr\\share\\info;D:\\DevTools\\Git\\usr\\info;D:\\DevTools\\Git\\share\\info",
+    "INIT_CWD": "E:\\blog\\daisy-blog",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_231",
+    "LANG": "zh_CN.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\biany\\AppData\\Local",
+    "LOGONSERVER": "\\\\LAPTOP-8CTT8E71",
+    "MANPATH": "D:\\DevTools\\Git\\mingw64\\local\\man;D:\\DevTools\\Git\\mingw64\\share\\man;D:\\DevTools\\Git\\usr\\local\\man;D:\\DevTools\\Git\\usr\\share\\man;D:\\DevTools\\Git\\usr\\man;D:\\DevTools\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "D:/DevTools/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "D:/DevTools/Git/mingw64",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "development",
+    "npm_config_access": "",
+    "npm_config_allow_same_version": "",
+    "npm_config_also": "",
+    "npm_config_always_auth": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"run\",\"dev\"]}",
+    "npm_config_audit": "true",
+    "npm_config_audit_level": "low",
+    "npm_config_auth_type": "legacy",
+    "npm_config_before": "",
+    "npm_config_bin_links": "true",
+    "npm_config_browser": "",
+    "npm_config_ca": "",
+    "npm_config_cache": "C:\\Users\\biany\\AppData\\Roaming\\npm-cache",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_cache_min": "10",
+    "npm_config_cafile": "",
+    "npm_config_cert": "",
+    "npm_config_cidr": "",
+    "npm_config_color": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_depth": "Infinity",
+    "npm_config_description": "true",
+    "npm_config_dev": "",
+    "npm_config_dry_run": "",
+    "npm_config_editor": "notepad.exe",
+    "npm_config_engine_strict": "",
+    "npm_config_fetch_retries": "2",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_force": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_git": "git",
+    "npm_config_git_tag_version": "true",
+    "npm_config_global": "",
+    "npm_config_globalconfig": "C:\\Users\\biany\\AppData\\Roaming\\npm\\etc\\npmrc",
+    "npm_config_globalignorefile": "C:\\Users\\biany\\AppData\\Roaming\\npm\\etc\\npmignore",
+    "npm_config_global_style": "",
+    "npm_config_group": "",
+    "npm_config_ham_it_up": "",
+    "npm_config_heading": "npm",
+    "npm_config_https_proxy": "",
+    "npm_config_if_present": "",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_author_email": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_init_license": "ISC",
+    "npm_config_init_module": "C:\\Users\\biany\\.npm-init.js",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_json": "",
+    "npm_config_key": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_link": "",
+    "npm_config_local_address": "",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_long": "",
+    "npm_config_maxsockets": "50",
+    "npm_config_message": "%s",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_node_gyp": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js",
+    "npm_config_node_options": "",
+    "npm_config_node_version": "12.13.0",
+    "npm_config_noproxy": "",
+    "npm_config_offline": "",
+    "npm_config_onload_script": "",
+    "npm_config_only": "",
+    "npm_config_optional": "true",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_package_lock_only": "",
+    "npm_config_parseable": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_prefer_online": "",
+    "npm_config_prefix": "C:\\Users\\biany\\AppData\\Roaming\\npm",
+    "npm_config_preid": "",
+    "npm_config_production": "",
+    "npm_config_progress": "true",
+    "npm_config_proxy": "",
+    "npm_config_read_only": "",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_rollback": "true",
+    "npm_config_save": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_save_dev": "",
+    "npm_config_save_exact": "",
+    "npm_config_save_optional": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_save_prod": "",
+    "npm_config_scope": "",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_script_shell": "",
+    "npm_config_searchexclude": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_searchopts": "",
+    "npm_config_searchstaleness": "900",
+    "npm_config_send_metrics": "",
+    "npm_config_shell": "C:\\Windows\\system32\\cmd.exe",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_sign_git_commit": "",
+    "npm_config_sign_git_tag": "",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_sso_type": "oauth",
+    "npm_config_strict_ssl": "true",
+    "npm_config_tag": "latest",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_timing": "",
+    "npm_config_tmp": "C:\\Users\\biany\\AppData\\Local\\Temp",
+    "npm_config_umask": "0000",
+    "npm_config_unicode": "",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "npm_config_usage": "",
+    "npm_config_user": "",
+    "npm_config_userconfig": "C:\\Users\\biany\\.npmrc",
+    "npm_config_user_agent": "npm/6.12.0 node/v12.13.0 win32 x64",
+    "npm_config_version": "",
+    "npm_config_versions": "",
+    "npm_config_viewer": "browser",
+    "npm_execpath": "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "npm_lifecycle_event": "dev",
+    "npm_lifecycle_script": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_author_name": "bianyingchun",
+    "npm_package_dependencies_cross_env": "^5.2.0",
+    "npm_package_dependencies_highlight_js": "^9.18.1",
+    "npm_package_dependencies_koa": "^2.6.2",
+    "npm_package_dependencies_marked": "^0.8.2",
+    "npm_package_dependencies_mavon_editor": "^2.7.7",
+    "npm_package_dependencies_moment": "^2.26.0",
+    "npm_package_dependencies_node_sass": "^4.14.1",
+    "npm_package_dependencies_nuxt": "^2.0.0",
+    "npm_package_dependencies_ua_parser_js": "^0.7.21",
+    "npm_package_dependencies_vue_awesome_swiper": "^3.1.3",
+    "npm_package_dependencies_vue_lazyload": "^1.3.3",
+    "npm_package_dependencies_vue_no_ssr": "^1.1.1",
+    "npm_package_dependencies__nuxtjs_axios": "^5.3.6",
+    "npm_package_dependencies__nuxtjs_style_resources": "^1.0.0",
+    "npm_package_description": "My astonishing Nuxt.js project",
+    "npm_package_devDependencies_nodemon": "^1.18.9",
+    "npm_package_devDependencies_sass_loader": "^7.3.1",
+    "npm_package_gitHead": "b623f4f1c72616abd7e3252d92dcd2c0375ade15",
+    "npm_package_name": "daisy-blog",
+    "npm_package_private": "true",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_scripts_build": "nuxt build",
+    "npm_package_scripts_dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "npm_package_scripts_generate": "nuxt generate",
+    "npm_package_scripts_start": "cross-env NODE_ENV=production node server/index.js",
+    "npm_package_version": "1.0.0",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\biany\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\biany\\OneDrive",
+    "ORIGINAL_PATH": "D:\\DevTools\\Git\\mingw64\\bin;D:\\DevTools\\Git\\usr\\bin;C:\\Users\\biany\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\nodejs;D:\\DevTools\\mongodb\\bin;D:\\DevTools\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\Program Files\\Java\\jdk1.8.0_231\\jre\\bin;D:\\DevTools\\FlutterSource\\flutter\\bin;D:\\DevTools\\Android\\SDK\\tools;D:\\DevTools\\Android\\SDK\\platform-tools;D:\\Program Files\\Nox\\bin;D:\\DevTools;D:\\DevTools\\Python\\Scripts;D:\\DevTools\\Python;C:\\Users\\biany\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\biany\\AppData\\Roaming\\npm;D:\\DevTools\\PyCharm 2019.2.5\\bin;D:\\DevTools\\Microsoft VS Code\\bin",
+    "ORIGINAL_TEMP": "C:/Users/biany/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/biany/AppData/Local/Temp",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;E:\\blog\\daisy-blog\\node_modules\\.bin;C:\\Users\\biany\\bin;D:\\DevTools\\Git\\mingw64\\bin;D:\\DevTools\\Git\\usr\\local\\bin;D:\\DevTools\\Git\\usr\\bin;D:\\DevTools\\Git\\usr\\bin;D:\\DevTools\\Git\\mingw64\\bin;D:\\DevTools\\Git\\usr\\bin;C:\\Users\\biany\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\nodejs;D:\\DevTools\\mongodb\\bin;D:\\DevTools\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\Program Files\\Java\\jdk1.8.0_231\\jre\\bin;D:\\DevTools\\FlutterSource\\flutter\\bin;D:\\DevTools\\Android\\SDK\\tools;D:\\DevTools\\Android\\SDK\\platform-tools;D:\\Program Files\\Nox\\bin;D:\\DevTools;D:\\DevTools\\Python\\Scripts;D:\\DevTools\\Python;C:\\Users\\biany\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\biany\\AppData\\Roaming\\npm;D:\\DevTools\\PyCharm 2019.2.5\\bin;D:\\DevTools\\Microsoft VS Code\\bin;D:\\DevTools\\Git\\usr\\bin\\vendor_perl;D:\\DevTools\\Git\\usr\\bin\\core_perl",
+    "PATH": "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;E:\\blog\\daisy-blog\\node_modules\\.bin;C:\\Users\\biany\\bin;D:\\DevTools\\Git\\mingw64\\bin;D:\\DevTools\\Git\\usr\\local\\bin;D:\\DevTools\\Git\\usr\\bin;D:\\DevTools\\Git\\usr\\bin;D:\\DevTools\\Git\\mingw64\\bin;D:\\DevTools\\Git\\usr\\bin;C:\\Users\\biany\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\nodejs;D:\\DevTools\\mongodb\\bin;D:\\DevTools\\Git\\cmd;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\Program Files\\Java\\jdk1.8.0_231\\jre\\bin;D:\\DevTools\\FlutterSource\\flutter\\bin;D:\\DevTools\\Android\\SDK\\tools;D:\\DevTools\\Android\\SDK\\platform-tools;D:\\Program Files\\Nox\\bin;D:\\DevTools;D:\\DevTools\\Python\\Scripts;D:\\DevTools\\Python;C:\\Users\\biany\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\biany\\AppData\\Roaming\\npm;D:\\DevTools\\PyCharm 2019.2.5\\bin;D:\\DevTools\\Microsoft VS Code\\bin;D:\\DevTools\\Git\\usr\\bin\\vendor_perl;D:\\DevTools\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "D:\\DevTools\\Git\\mingw64\\lib\\pkgconfig;D:\\DevTools\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD",
+    "PROCESSOR_LEVEL": "23",
+    "PROCESSOR_REVISION": "1801",
+    "ProgramData": "C:\\ProgramData",
+    "PROGRAMFILES": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PUB_HOSTED_URL": "https://pub.flutter-io.cn",
+    "PWD": "E:/blog/daisy-blog",
+    "PyCharm": "D:\\DevTools\\PyCharm 2019.2.5\\bin;",
+    "SESSIONNAME": "Console",
+    "SHELL": "D:\\DevTools\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "2",
+    "SSH_ASKPASS": "D:/DevTools/Git/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\biany\\AppData\\Local\\Temp",
+    "TERM": "xterm",
+    "TMP": "C:\\Users\\biany\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\biany\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LAPTOP-8CTT8E71",
+    "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-8CTT8E71",
+    "USERNAME": "biany",
+    "USERPROFILE": "C:\\Users\\biany",
+    "VUE_ENV": "server",
+    "WINDIR": "C:\\Windows",
+    "_": "C:/Program Files/nodejs/node.exe",
+    "_AXIOS_BASE_URL_": "http://localhost:8080/",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\System32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\winmmbase.dll",
+    "C:\\Windows\\System32\\cfgmgr32.dll",
+    "C:\\Windows\\System32\\bcryptPrimitives.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\System32\\powrprof.dll",
+    "C:\\Windows\\System32\\UMPDC.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\kernel.appcore.dll",
+    "\\\\?\\E:\\blog\\daisy-blog\\node_modules\\_node-sass@4.14.1@node-sass\\vendor\\win32-x64-72\\binding.node",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}

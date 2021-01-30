@@ -30,7 +30,7 @@ export default function ({ redirect, app }, inject) {
                 // NProgress.done();
             }
             // return response
-            if (response.data.code == 401) {
+            if (response.data.code == 402) { //刷新token
                 // 返回401，token验证失败，清除客户端cookie
                 // Cookie.remove("token");
                 // // 重定向到登录页面， 这里做一个判断，容错：req.url 未定义
@@ -49,17 +49,17 @@ export default function ({ redirect, app }, inject) {
             }
         },
         error => {
-            if (process.client) {
-                // NProgress.done();
-            }
-            if (error.response.status == 500) {
-                // http状态500，服务器内部错误，重定向到500页面
-                redirect("/500.html")
-            }
-            if (error.response.status == 404) {
-                // http状态500，请求API找不到，重定向到404页面
-                redirect("/404.html")
-            }
+            // if (process.client) {
+            //     // NProgress.done();
+            // }
+            // if (error.response.status == 500) {
+            //     // http状态500，服务器内部错误，重定向到500页面
+            //     redirect("/500.html")
+            // }
+            // if (error.response.status == 404) {
+            //     // http状态500，请求API找不到，重定向到404页面
+            //     redirect("/404.html")
+            // }
             return Promise.reject(error.response)   // 返回接口返回的错误信息
         })
     // 注入到context.app.$request中

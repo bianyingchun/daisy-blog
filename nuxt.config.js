@@ -13,6 +13,11 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        // src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'
+      }
     ]
   },
   /*
@@ -30,10 +35,13 @@ module.exports = {
   */
   plugins: [
     { src: "~/plugins/vueAwesomeSwiper.js", ssr: false },
+    { src: "~/plugins/vueLazyload.js", ssr: false },
     { src: '~/plugins/vue-mavon-editor.js', ssr: false },
     { src: '~/plugins/pin.js', ssr: false },
     { src: '~/plugins/extend.js' },
-    { src: "~/plugins/axios.js" }
+    { src: "~/plugins/axios.js" },
+    { src: "~/plugins/popup.js", ssr: false },
+    { src: '~/plugins/music-player.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -62,6 +70,8 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.externals = {
+      }
     }
   },
   styleResources: {

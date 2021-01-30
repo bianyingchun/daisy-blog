@@ -1,10 +1,4 @@
-/**
- * @file 标签数据状态 / ES module
- * @module store/tag
- * @author Surmon <https://github.com/surmon-china>
- */
-
-export const TAG_API_PATH = '/tag'
+import { TAG_LIST } from "~/constants/api"
 
 export const state = () => {
     return {
@@ -25,10 +19,13 @@ export const mutations = {
 export const actions = {
     async fetchList ({ commit }) {
         commit('updateFetching', true)
-        const res = await this.$request('/tag/list', 'get', {});
-        if (res) {
+        try {
+            const res = await this.$request(TAG_LIST, 'get', {});
             commit('updateListData', res.result.list);
+        } catch (err) {
+            console.log(err)
+        } finally {
+            commit('updateFetching', true)
         }
-        commit('updateFetching', true)
     }
 }

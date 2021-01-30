@@ -7,7 +7,8 @@
 <script>
 export default {
   async fetch ({ store }) {
-    await store.dispatch('tag/fetchList')
+    console.log('fetch article')
+    // await store.dispatch('tag/fetchList')
   },
   created () {
 

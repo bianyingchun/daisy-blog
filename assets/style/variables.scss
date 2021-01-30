@@ -1,13 +1,12 @@
-
 // url
-$cdn-url: '' !default;
+$cdn-url: "" !default;
 
 @function cdn-url($uri) {
-  @return url($cdn-url + $uri);
+  @return url($cdn-url+$uri);
 }
 
 @function force-source-url($uri) {
-  @return url('https://surmon.me' + $uri);
+  @return url("https://surmon.me"+$uri);
 }
 
 // PC theme color
@@ -58,15 +57,15 @@ $black-light: #555555;
 $golden-ratio: 0.618;
 
 // gap
-$gap: 1rem; // ~12px
+$gap: 0.85rem; // ~12px
 $sm-gap: $gap * $golden-ratio; // ~8px
 $xs-gap: $sm-gap / 2; // ~4px
 $lg-gap: $sm-gap * 2; // ~14px
 
 // times
-$transition-time-fast: .1s;
-$transition-time-normal: .25s;
-$transition-time-slow: .38s;
+$transition-time-fast: 0.1s;
+$transition-time-normal: 0.25s;
+$transition-time-slow: 0.38s;
 
 // Z indexs
 $z-index-top: 99999;
@@ -76,18 +75,22 @@ $z-index-normal: 0;
 $z-index-underground: -1;
 
 // other
-$radius: 2px;
+$radius: 8px;
+$sm-radius: 4px;
 $border: 1px solid $text-dividers;
-
+$box-shadow: 0 0 5px 1px #f5f5f5;
+$box-shadow-thin: 0 0 3px 0 #ccc;
 // PC
 $header-height: 5.1rem;
 $footer-height: 6rem;
 $container-width: 1050px;
-$navbar-width: 160px;
+$navbar-width: 200px;
 $main-width: 595px;
-$aside-width: 266px;
+$aside-width: 260px;
 $block-button-height: 3.4rem;
-$active-content-full-height: calc(100vh - #{$header-height + $lg-gap + $footer-height + $lg-gap});
+$active-content-full-height: calc(
+  100vh - #{$header-height + $lg-gap + $footer-height + $lg-gap}
+);
 
 // Mobile
 $mobile-header-height: 5rem;
@@ -100,22 +103,35 @@ $small-breakpoint: 400px;
 $large-breakpoint: $container-width;
 
 // font
-$font-family-sans-serif: SpecialSymbol, DINRegular, -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "微软雅黑", sans-serif;
-$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
+$font-family-sans-serif: SpecialSymbol, DINRegular, -apple-system,
+  BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Hiragino Sans GB",
+  "Segoe UI", "Microsoft YaHei", "微软雅黑", sans-serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base: $font-family-sans-serif;
 
 // typography
 $font-size-root: 12px;
 $font-size-base: 14px;
 $font-size-large: $font-size-base * 1.25; // ~17.5px
-$font-size-small: $font-size-base * .888; // ~12.4px
+$font-size-small: $font-size-base * 0.888; // ~12.4px
 
 $font-size-h1: $font-size-base * 1.7; // ~23.8px
 $font-size-h2: $font-size-base * 1.45; // ~20.3px
 $font-size-h3: $font-size-base * 1.3; // ~18.2px
 $font-size-h4: $font-size-base * 1.15; // ~16.1px
-$font-size-h5: $font-size-base;  // ~14px
+$font-size-h5: $font-size-base; // ~14px
 $font-size-h6: $font-size-base * 0.95; // ~13.3px
 
 $line-height-base: 1.4;
 
+// ====byc===
+$font-bold: 600;
+$box-bg: var(--box-bg);
+$box-padding: 20px;
+$box-padding-md: 10px;
+
+$box-transition: all $transition-time-normal linear;
+
+$bg-yellow: rgb(254, 237, 207);
+$bg-pink: rgb(249, 218, 217);
+$bg-green: rgb(221, 243, 222);

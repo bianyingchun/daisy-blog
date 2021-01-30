@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      padding: 40px;
+    }
+    div {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      background-color: skyblue;
+    }
+    .perspective {
+      /* Includes a perspective to create a 3D space */
+      transform: perspective(400px) translateZ(-100px);
+      background-color: cornsilk;
+    }
+    .scaled {
+      /* Includes a perspective to create a 3D space */
+      transform: perspective(400px) scaleZ(2);
+      background-color: pink;
+    }
+  </style>
+  <body>
+    <div class="perspective">Translated</div>
+    <div>Normal</div>
+    <div class="scaled" id="btn">Scaled</div>
+    <script>
+      const box = document.getElementById("btn");
+      box.onclick = () => {
+        console.log(2);
+        box.animate(
+          [
+            // keyframes
+            { transform: "translateY(-300px)" },
+            { transform: "none" }
+          ],
+          {
+            // timing options
+            duration: 1000,
+            iterations: 1
+          }
+        );
+      };
+    </script>
+  </body>
+</html>

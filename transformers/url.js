@@ -16,3 +16,5 @@ export const getPageUrl = (uri) => {
 export const getArticleDetailPageUrl = (articleID) => {
   return getPageUrl(getArticleDetailRoute(articleID))
 }
+
+export const getMusicUrl = (id) => `https://music.163.com/song/media/outer/url?id=${id}.mp3`

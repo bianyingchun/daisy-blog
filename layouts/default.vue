@@ -2,9 +2,9 @@
   <div v-cloak
        id="app"
        :class="theme">
-    <no-ssr placeholder="Loading...">
+    <!-- <no-ssr placeholder="Loading...">
       <div>只在客户端渲染</div>
-    </no-ssr>
+    </no-ssr> -->
     <pc-main-view v-if="!isMobile"></pc-main-view>
     <mobile-main-view v-else></mobile-main-view>
   </div>
@@ -15,16 +15,25 @@ import { mapMutations, mapGetters } from 'vuex'
 import PcMainView from '~/components/layout/pc'
 import MobileMainView from '~/components/layout/mobile'
 export default {
+  watchQuery: true,
   data () {
     return {
     }
   },
   computed: {
-    ...mapGetters('global', ['theme', 'isMobile'])
+    theme () {
+      return this.$store.state.global.theme
+    },
+    isMobile () {
+      return this.$store.state.global.isMobile
+    }
   },
   components: {
     PcMainView,
     MobileMainView
+  },
+  mounted () {
+
   }
 }
 </script>
