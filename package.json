@@ -21,7 +21,7 @@
     "marked": "^0.8.2",
     "mavon-editor": "^2.7.7",
     "moment": "^2.26.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nuxt": "^2.0.0",
     "ua-parser-js": "^0.7.21",
     "vue-awesome-swiper": "^3.1.3",
